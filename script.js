@@ -1,0 +1,5 @@
+function usernameAuthenticate(usr , pass)
+{
+    
+
+}
