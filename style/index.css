@@ -3,14 +3,19 @@
 
 :root {
   /* color */
-  --color-white: hsl(252, 30%, 100%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-gray: hsl(252, 15%, 65%);
-  --color-primary: hsl(252, 75%, 60%);
+  --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
-  --color-succes: hsl(120, 95%, 65%);
+  --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
   --color-black: hsl(252, 30%, 10%);
 
   --border-radius: 2rem;
@@ -43,6 +48,7 @@ body {
 }
 
 /* General Styles */
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -440,6 +446,8 @@ main .container .right {
   border-radius: 50%;
   border: 3px solid var(--color-white);
   background: var(--color-success);
+  bottom: 0;
+  right: 0;
 }
 .right .message .profile-photo {
   position: relative;
@@ -497,7 +505,8 @@ main .container .right {
 }
 /* ------------------- Font Size -------------------- */
 .customize-theme .font-size {
-  margin: 5rem;
+  /* margin: 5rem; */
+  margin-top: 5rem;
 }
 .customize-theme .font-size > div {
   display: flex;
