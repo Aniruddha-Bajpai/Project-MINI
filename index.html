@@ -42,8 +42,8 @@
               <img src="./image/asset_social/profile-1.jpg" />
             </div>
             <div class="handle">
-              <h4>Diana Ayi</h4>
-              <p class="text-muted">@dayi</p>
+              <h4>Dr. Mansi Verma</h4>
+              <p class="text-muted">@HeartSurgeon</p>
             </div>
           </a>
 
@@ -53,7 +53,7 @@
               <span><i class="uil uil-home"></i></span>
               <h3>Home</h3>
             </a>
-            <a class="menu-item">
+            <a class="menu-item" id="explore">
               <span><i class="uil uil-compass"></i></span>
               <h3>Explore</h3>
             </a>
@@ -149,21 +149,23 @@
               </span>
               <h3>Theme</h3>
             </a>
-            <!-- <a class="menu-item">
+            <a class="menu-item" id="setting">
               <span>
                 <i class="uil uil-setting"></i>
               </span>
               <h3>Settings</h3>
-            </a> -->
+            </a>
           </div>
           <!--------------END OF SIDEBAR ------------->
-          <label for="create-post" class="btn btn-primary">Create Post</label>
+          <label for="create-post" class="btn btn-primary" id="chatbot">
+            Chat Here
+          </label>
         </div>
 
         <!------------------- MIDDLE ------------------->
         <div class="middle">
           <!--------------- story ---------------->
-          <div class="stories">
+          <!-- <div class="stories">
             <div class="story">
               <div class="profile-photo">
                 <img src="./image/asset_social/profile-8.jpg" />
@@ -200,10 +202,9 @@
               </div>
               <p class="name">Tina White</p>
             </div>
-          </div>
+          </div> -->
           <!-----------END OF story ------------->
-
-          <form action="" class="create-post">
+          <!-- <form action="" class="create-post">
             <div class="profile-photo">
               <img src="./image/asset_social/profile-1.jpg" />
             </div>
@@ -213,7 +214,7 @@
               id="create-post"
             />
             <input type="submit" value="Post" class="btn btn-primary" />
-          </form>
+          </form> -->
           <!------------------- FEEDS ----------------->
           <div class="feeds">
             <!------------------- FEED 1 ----------------->
@@ -610,11 +611,11 @@
               />
             </div>
             <!----------------- messages caregory-------------------->
-            <div class="category">
+            <!-- <div class="category">
               <h6 class="active">Primary</h6>
               <h6>General</h6>
               <h6 class="message-requests">Requests(7)</h6>
-            </div>
+            </div> -->
             <!-------------message 1------------->
             <div class="message">
               <div class="profile-photo">
@@ -622,7 +623,7 @@
                 <div class="active"></div>
               </div>
               <div class="message-body">
-                <h5>Manish Lokhandwale</h5>
+                <h5>Dr. Manish Lokhandwale</h5>
                 <p class="text-muted">
                   Call Dr. Kirti for further details of the case
                 </p>
@@ -635,7 +636,7 @@
                 <div class="active"></div>
               </div>
               <div class="message-body">
-                <h5>Ajay khurana</h5>
+                <h5>Dr. Ajay khurana</h5>
                 <p class="text-muted">Check-out today's patient records</p>
               </div>
             </div>
@@ -654,7 +655,7 @@
           <!---------------End of message ----------->
           <!--------------- friend request ---------------->
           <div class="friend-requests">
-            <h4>Requests</h4>
+            <h4>Top picks</h4>
             <!-- ------------- Request-1 -------------- -->
             <div class="request">
               <div class="info">
@@ -662,29 +663,21 @@
                   <img src="./image/asset_social/profile-8.jpg" />
                 </div>
                 <div>
-                  <h5>Ankit Banerjee</h5>
-                  <p class="text-muted">10 mutual friends</p>
+                  <h5>Dr Z S Meharwal</h5>
+                  <p class="text-muted">Leading Cardiac Surgeon</p>
                 </div>
-              </div>
-              <div class="action">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Decline</button>
               </div>
             </div>
             <!-- ------------- Request-2 -------------- -->
             <div class="request">
               <div class="info">
                 <div class="profile-photo">
-                  <img src="./image/asset_social/profile-8.jpg" />
+                  <img src="./image/asset_social/profile-9.jpg" />
                 </div>
                 <div>
-                  <h5>Jacqline Banerjee</h5>
-                  <p class="text-muted">2 mutual friends</p>
+                  <h5>Dr. Sandeep Vaishya</h5>
+                  <p class="text-muted">Top Neurosurgeon</p>
                 </div>
-              </div>
-              <div class="action">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Decline</button>
               </div>
             </div>
             <!-- ------------- Request-3 -------------- -->
@@ -694,13 +687,9 @@
                   <img src="./image/asset_social/profile-10.jpg" />
                 </div>
                 <div>
-                  <h5>Jennifer Toplerene</h5>
-                  <p class="text-muted">19 mutual friends</p>
+                  <h5>Dr. H. S. Chhabra</h5>
+                  <p class="text-muted">Best spine surgeon</p>
                 </div>
-              </div>
-              <div class="action">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Decline</button>
               </div>
             </div>
           </div>
@@ -762,6 +751,21 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- // Customise setting //-->
+    <div class="customize-setting">
+      <div class="card"></div>
+    </div>
+
+    <!-- -----------------// customise-explore //------------------ -->
+    <div class="customize-explore">
+      <div class="card"></div>
+    </div>
+
+    <!-- ---------------------// customize-chatbot //----------------  -->
+    <div class="customize-chatbot">
+      <div class="card"></div>
     </div>
     <script src="./script.js"></script>
   </body>

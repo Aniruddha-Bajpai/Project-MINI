@@ -1,6 +1,8 @@
 // SIDEBAR
 const menuItems = document.querySelectorAll(".menu-item");
 // MESSAGES
+const notifcation = document.querySelector("#notifications");
+const notifyModal = document.querySelector(".notifications-popup");
 const messagesNotification = document.querySelector("#messages-notification");
 const messages = document.querySelector(".messages");
 const message = document.querySelectorAll(".message");
@@ -27,7 +29,7 @@ menuItems.forEach((item) => {
     changeActiveItem();
     item.classList.add("active");
     if (item.id != "notifications") {
-      document.querySelector(".notifications-popup").style.display = "none";
+      notifyModal.style.display = "none";
     } else {
       document.querySelector(".notifications-popup").style.display = "block";
       document.querySelector(
@@ -190,3 +192,58 @@ Bg3.addEventListener("click", () => {
   Bg2.classList.remove("active");
   changeBG();
 });
+// ----------------------- customize setting ---------------------
+const setting = document.querySelector("#setting");
+const settingModal = document.querySelector(".customize-setting");
+// open setting box
+const openSettingModal = () => {
+  settingModal.style.display = "grid";
+};
+//  close-modal-function
+const closeSettingModal = (e) => {
+  if (e.target.classList.contains("customize-setting")) {
+    settingModal.style.display = "none";
+  }
+};
+// close event listener
+settingModal.addEventListener("click", closeSettingModal);
+// open event listener
+setting.addEventListener("click", openSettingModal);
+
+// ---------------------customize-explore model ----------------------
+
+const explore = document.querySelector("#explore");
+const exploreModal = document.querySelector(".customize-explore");
+// open setting box
+const openExploreModal = () => {
+  exploreModal.style.display = "grid";
+};
+//  close-modal-function
+const closeExploreModal = (e) => {
+  if (e.target.classList.contains("customize-explore")) {
+    exploreModal.style.display = "none";
+  }
+};
+// close event listener
+exploreModal.addEventListener("click", closeExploreModal);
+// open event listener
+explore.addEventListener("click", openExploreModal);
+
+// ------------------------------ customize-chatbot ------------------
+
+const chatbot = document.querySelector("#chatbot");
+const chatbotModal = document.querySelector(".customize-chatbot");
+// open setting box
+const openChatbotModal = () => {
+  chatbotModal.style.display = "grid";
+};
+//  close-modal-function
+const closeChatbotModal = (e) => {
+  if (e.target.classList.contains("customize-chatbot")) {
+    chatbotModal.style.display = "none";
+  }
+};
+// close event listener
+chatbotModal.addEventListener("click", closeChatbotModal);
+// open event listener
+chatbot.addEventListener("click", openChatbotModal);

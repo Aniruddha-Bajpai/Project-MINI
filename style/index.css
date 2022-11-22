@@ -251,7 +251,7 @@ main .container .left .profile {
   display: block;
 }
 /* ================== MIDDLE ================ */
-.middle .stories {
+/* .middle .stories {
   display: flex;
   justify-content: space-between;
   height: 12rem;
@@ -312,8 +312,9 @@ main .container .left .profile {
   align-self: start;
   border: 3px solid var(--color-primary);
 }
+*/
 /* ================== CREATE POST =============== */
-.middle .create-post {
+/* .middle .create-post {
   width: 100%;
   display: flex;
   align-items: center;
@@ -330,7 +331,7 @@ main .container .left .profile {
   background: transparent;
   color: var(--color-dark);
   margin-right: 1rem;
-}
+} */
 
 /* ======================= FEEDS ==================== */
 .middle .feeds .feed {
@@ -503,6 +504,7 @@ main .container .right {
   width: 50%;
   box-shadow: 0 0 1rem var(--color-primary);
 }
+
 /* ------------------- Font Size -------------------- */
 .customize-theme .font-size {
   /* margin: 5rem; */
@@ -696,4 +698,77 @@ MEDIA QUERIES FOR SMALL TABLETS
   .customize-theme .card {
     width: 92vw;
   }
+}
+
+/*----------------- curstomise setting ---------------- */
+
+.customize-setting {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.customize-setting .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
+}
+
+/*------------------------ customise explore ------------------*/
+.customize-explore {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.customize-explore .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
+}
+
+/* ------------------- Chatbot float ---------------- */
+.customize-chatbot {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.customize-chatbot .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
 }
